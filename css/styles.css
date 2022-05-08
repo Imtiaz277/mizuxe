@@ -1,0 +1,218 @@
+body{
+	position: relative;
+}
+
+
+/*Common Styles*/
+
+.section-heading{
+	font-size: 2.4rem;
+	margin-bottom: 2rem;
+}
+
+.section-text, .section-hr{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3rem;
+}
+
+.section-text{
+	font-size: 1.1rem;
+}
+
+.section-hr{
+	margin-bottom: 4rem;
+}
+
+
+/*Navigation bar*/
+
+.navbar{
+	border-bottom: 2px solid #008ed6;
+	background-color: rgba(248, 249, 250, 0.8);
+}
+
+.navbar-brand{
+	opacity: 1.0 !important;
+}
+
+
+/*Section 1*/
+
+.section-1{
+	min-height: 600px;
+	background: url(../img/mountains.jpg);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+}
+
+.section-1 .bg-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 600px;
+	width: 100%;
+	background-color: rgba(0, 142, 214, 0.7);
+}
+
+.section-1-inner{
+	margin-top: 9rem;
+}
+
+.img-container{
+	width: 100%;
+}
+
+.section-1-img{
+	width: 50%;
+}
+
+
+/*Section-2*/
+
+.card-section-3{
+	width: 15rem;
+	text-align: center;
+}
+
+.card-section-3:nth-child(odd){
+	border: 2px solid #0dcaf0;
+}
+
+.card-section-3:nth-child(odd) h5{
+	color: #0dcaf0;
+}
+
+.card-section-3:nth-child(even){
+	background-color: #0dcaf0;
+	color: white;
+}
+
+
+/*Section 5*/
+
+.section-5 .row{
+	margin-top: 6rem;
+}
+
+.section-5-card{
+	transition: all 0.3s;
+}
+
+.section-5-card:hover{
+    background-color: #0dcaf0;
+    color: white;
+}
+
+.section-5-img-card{
+    border-radius:50%;
+    width: 30%;
+    position:absolute;
+    top:-3rem;
+    left: calc(50% - 15%);
+}
+
+.section-5-card-body{
+    margin-top: 3rem;   
+}
+
+.section-5-social-icons a i{
+	color: white;
+	transition: color 0.2s;
+}
+
+.section-5-social-icons a i:hover{
+	color: #6c757d;
+}
+
+.section-6-img-resize{
+	width: 50%;
+}
+
+textarea{
+	height: 10rem;
+}
+
+@media(max-width: 1399px){
+	.section-5-img-card{
+		width: 40%;
+		left: calc(50% - 20%);
+	}
+
+	.section-5-card-body{
+		margin-top: 4rem;   
+	}
+}
+
+@media(max-width: 1199px){
+	.section-5-img-card{
+		width: 50%;
+		left: calc(50% - 25%);
+	}
+
+	.section-5-card-body{
+		margin-top: 4rem;   
+	}
+
+	.section-5-card-body .card-title{
+		font-size: 1.4rem;
+	}
+}
+
+@media(max-width: 991px){
+
+	/*Common Styles*/
+	.section-text, .section-hr{
+		width: 100%;
+	}
+
+	/*Section 1*/
+	.section-1-inner{
+		margin-top: 15rem;
+	}
+
+	/*Section 2*/
+	.form-container .col-lg-4 input{ 
+		margin-bottom: 2rem;
+	}
+
+	/*Section 3*/
+	.card-section-3{
+		width: 100%;
+	}
+
+	.card-section-3:not(:last-child) { 
+		margin-bottom: 3rem;
+	}
+
+	/*Section 5*/
+	.section-5-img-card{
+		width: 20%;
+		top: -4rem;
+		left: calc(50% - 10%);
+	}
+
+	.section-5-card-body{
+		margin-top: 6rem;
+		margin-bottom: 4rem;  
+	}
+
+	.section-5-card-body .card-title{
+		font-size: 2rem;
+	}
+}
+
+@media(max-width: 767px){
+	.section-5-img-card{
+		width: 25%;
+		top: -4rem;
+		left: calc(50% - 12.5%);
+	}
+
+	.section-5-card-body{
+		margin-top: 5rem;
+		margin-bottom: 5rem;  
+	}
+}
